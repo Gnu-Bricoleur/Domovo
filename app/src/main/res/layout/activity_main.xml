@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<TableLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:stretchColumns="0,1">
+
+    <TextView
+        android:text="Volets Roulants"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
+
+
+    <!--
+       ############################################Salon Est
+    -->
+
+
+    <TextView
+        android:text="Salon Est"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id1"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id2"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id3"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id4"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id5"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id6"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+    <!--
+       ############################################Salon Sud
+    -->
+
+
+
+
+
+    <TextView
+        android:text="Salon Sud"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id11"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id12"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id13"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id14"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id15"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id16"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+    <!--
+       ############################################Balcon
+    -->
+
+
+
+
+
+    <TextView
+        android:text="Balcon"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id21"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id22"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id23"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id24"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id25"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id26"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+    <!--
+       ############################################Chambre Est
+    -->
+
+
+
+        <TextView
+        android:text="Chambre Est"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id31"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id32"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id33"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id34"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id35"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id36"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+
+
+    <!--
+       ############################################Chambre sud
+    -->
+
+
+
+
+
+        <TextView
+        android:text="Chambre Sud"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id41"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id42"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id43"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id44"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id45"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id46"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+
+
+
+    <!--
+       ############################################Bureau
+    -->
+
+
+
+
+
+
+
+        <TextView
+        android:text="Bureau"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id51"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id52"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id53"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id54"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id55"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id56"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+
+    <!--
+       ############################################ Chambre d'amis
+    -->
+
+
+
+
+
+
+
+        <TextView
+        android:text="Chambre d'amis"
+        android:textSize="15sp"
+        android:layout_marginTop="15sp"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id61"
+            android:layout_column="0"
+            android:text="Ouvert" />
+        <Button
+            android:id="@+id/button_id62"
+            android:layout_column="1"
+            android:text="Un quart" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id63"
+            android:text="Moitié" />
+        <Button
+            android:id="@+id/button_id64"
+            android:text="Trois quarts" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_id65"
+            android:text="Presque Fermé" />
+        <Button
+            android:id="@+id/button_id66"
+            android:text="Fermé" />
+    </TableRow>
+
+
+
+
+
+
+
+
+</TableLayout>
+
+</ScrollView>

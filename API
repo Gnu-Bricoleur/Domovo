@@ -1,0 +1,10 @@
+Ouvert=0;Un quart=17;Moitié=35;Trois quarts=60;Presque fermé=81;Fermé=100 1;Centralisation;centralisation;-1;0 
+1;Tout le haut;haut;-1;0 
+1;Tout le bas;bas;4;0 
+0;Salon Est;salon_est;2;0 
+0;Salon Sud;salon_sud;2;0 
+0;Balcon;balcon;5;0 
+0;Chambre Est;ch1_est;4;0 
+0;Chambre Sud;ch1_sud;4;0 
+0;Bureau;ch2;4;0 
+0;Chambre d'ami;ch3;4;0 
