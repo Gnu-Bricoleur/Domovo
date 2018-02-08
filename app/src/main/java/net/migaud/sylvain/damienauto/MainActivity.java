@@ -3,6 +3,7 @@ package net.migaud.sylvain.damienauto;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Environment;
@@ -11,7 +12,11 @@ import android.os.StrictMode;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -64,11 +69,43 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // User chose the "Settings" item, show the app settings UI...
+                Intent intent = new Intent(MainActivity.this, groupe_volets.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.action_favorite:
+                // User chose the "Favorite" action, mark the current item
+                // as a favorite...
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Toolbar myToolbar = (Toolbar) findViewById(R.id.menu);
+        //setSupportActionBar(myToolbar);
+
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();//Tres sale ;) faudrai mettre dans un thread
         StrictMode.setThreadPolicy(policy);
@@ -619,7 +656,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
         try{
-            URL url = new URL(URLServeur + "?commande_volet&nom=" + nom +"&etat=" + etat);
+            URL url = new URL(URLServeur + "&commande_volet&nom=" + nom +"&etat=" + etat);
             try {
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 //On etabli le num du bouton
@@ -670,7 +707,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
         try{
-            URL url = new URL(URLServeur + "?infos_volets");
+            URL url = new URL(URLServeur + "&infos_volets");
             try {
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 try {
