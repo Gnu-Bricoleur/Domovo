@@ -117,13 +117,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        File myDir = new File(Environment.getExternalStorageDirectory() + File.separator + "Domovo"); //pour créer le repertoire dans lequel on va mettre notre fichier
+        Boolean success=true;
+        if (!myDir.exists()) {
+            success = myDir.mkdir(); //On crée le répertoire (s'il n'existe pas!!)
+        }
+       /*
         String content = "hello world";
         File file;
         FileOutputStream outputStream;
         try {
             verifyStoragePermissions(this);
-            file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "/JeSuisLa.txt");
+            file = new File(Environment.getExternalStoragePublicDirectory(null), "/Domovo/JeSuisLa.txt");
 
             outputStream = new FileOutputStream(file);
             outputStream.write(content.getBytes());
@@ -133,10 +138,10 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
             System.out.println ("Aaaaaaarrghhhh !!!!!!!!!!!!");
         }
-
+        */
 
         try {
-            URLServeur = lireUrl(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/adresseserveur.txt");
+            URLServeur = lireUrl(Environment.getExternalStoragePublicDirectory(null) + "/Domovo/adresseserveur.txt");
         }
         catch(Exception e) {
 
