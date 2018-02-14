@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         */
 
         try {
-            URLServeur = lireUrl(Environment.getExternalStoragePublicDirectory(null) + "/Domovo/adresseserveur.txt");
+            URLServeur = lireUrl(Environment.getExternalStorageDirectory() + File.separator+ "Domovo"+ File.separator+"adresseserveur.txt");
         }
         catch(Exception e) {
 
