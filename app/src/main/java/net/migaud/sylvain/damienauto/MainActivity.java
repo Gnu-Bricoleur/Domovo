@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();//Tres sale ;) faudrai mettre dans un thread
         StrictMode.setThreadPolicy(policy);
 
-
+        verifyStoragePermissions(this);
 
 
 
